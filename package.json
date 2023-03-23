@@ -1,0 +1,23 @@
+{
+  "name": "alfa",
+  "version": "1.0.0",
+  "description": "Discord bot for Evidence",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^14.8.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "nodemon": "^2.0.22"
+  },  
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js",
+    "lint": "eslint --ext .js --max-warnings 0 ./src/",
+    "lint:fix": "eslint --ext .js --fix ./src/",
+    "deploy:commands": "node ./bin/deploy-commands.js"
+  }
+}
